@@ -1,0 +1,21 @@
+integer x
+integer y
+integer reversed
+integer count
+integer bit
+
+x = Get next input
+reversed = 0
+count = 0
+
+while x > 0
+   bit = x % 2
+   reversed = reversed * 10 + bit
+   count = count + 1
+   x = x / 2
+
+while count > 0
+   y = reversed % 10
+   Put y to output
+   reversed = reversed / 10
+   count = count - 1
